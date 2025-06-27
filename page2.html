@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Birthday Wishes Page 2</title>
+    <style>
+        body {
+            font-family: 'Comic Sans MS', cursive, sans-serif;
+            background-color: #f0f8ff;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            text-align: center;
+            color: #4b0082;
+        }
+        .container {
+            background-color: white;
+            border: 5px dashed #9370db;
+            border-radius: 15px;
+            padding: 30px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+            max-width: 800px;
+            margin: 20px;
+        }
+        h1 {
+            color: #ff69b4;
+            font-size: 2.8em;
+            margin-bottom: 20px;
+            text-shadow: 3px 3px 0 #ffe4e1;
+        }
+        p {
+            font-size: 1.4em;
+            line-height: 1.6;
+            margin-bottom: 30px;
+        }
+        .image-gallery {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 10px;
+            margin-bottom: 30px;
+        }
+        .image-gallery img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 8px;
+            border: 3px solid #ffb6c1;
+            transition: all 0.3s;
+        }
+        .image-gallery img:hover {
+            transform: rotate(5deg) scale(1.1);
+            border-color: #ff69b4;
+        }
+        .btn-container {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            margin-top: 20px;
+        }
+        .btn {
+            background-color: #9370db;
+            color: white;
+            border: none;
+            padding: 10px 25px;
+            font-size: 1.1em;
+            border-radius: 30px;
+            cursor: pointer;
+            transition: all 0.3s;
+            text-decoration: none;
+            box-shadow: 0 4px 10px rgba(147, 112, 219, 0.4);
+        }
+        .btn:hover {
+            background-color: #8a2be2;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 15px rgba(147, 112, 219, 0.6);
+        }
+        .btn-prev {
+            background-color: #ffb6c1;
+        }
+        .btn-prev:hover {
+            background-color: #ff69b4;
+        }
+        @media (max-width: 768px) {
+            .image-gallery {
+                display: block;
+            }
+            .image-gallery img {
+            height: 400px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Another Year Wiser!</h1>
+        <p>From your 18th to your 21st birthday,
+Each year has been a beautiful celebration in its own way.
+Even more magical moments are waiting ahead,
+So let’s cherish and celebrate them all — with joy, laughter, and love instead.
+Here’s to us, Amu — to more memories, more smiles, and endless happiness together.</p>
+        
+        <div class="image-gallery">
+            <img src="./images/1000008664.jpg" alt="Candles">
+            <img src="./images/1000041909.jpg" alt="Celebration">
+            <img src="./images/1000041911.jpg" alt="Decorations">
+            <img src="./images/1000097202.jpg" alt="Friends">
+            <img src="./images/1000097204.jpg" alt="Fun">
+        </div>
+        
+        <div class="btn-container">
+            <a href="index.html" class="btn btn-prev">Previous</a>
+            <a href="page3.html" class="btn">Next Wish</a>
+        </div>
+    </div>
+</body>
+</html>
