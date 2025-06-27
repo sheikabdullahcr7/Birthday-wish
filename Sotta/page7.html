@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Final Birthday Wishes</title>
+    <style>
+        body {
+            font-family: 'Pacifico', cursive;
+            background: url('https://source.unsplash.com/random/1920x1080/?sparkle') no-repeat center center fixed;
+            background-size: cover;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            text-align: center;
+            color: #fff;
+            text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        }
+        .container {
+            background-color: rgba(0, 0, 0, 0.6);
+            border-radius: 20px;
+            padding: 40px;
+            max-width: 800px;
+            margin: 20px;
+            backdrop-filter: blur(5px);
+            border: 2px solid gold;
+            position: relative;
+            overflow: hidden;
+        }
+        .container:before {
+            content: "";
+            position: absolute;
+            top: -10px;
+            left: -10px;
+            right: -10px;
+            bottom: -10px;
+            border: 2px solid rgba(255, 215, 0, 0.5);
+            border-radius: 30px;
+            z-index: -1;
+            animation: pulse 2s infinite alternate;
+        }
+        @keyframes pulse {
+            from {
+                border-color: rgba(255, 215, 0, 0.5);
+                box-shadow: 0 0 10px rgba(255, 215, 0, 0.5);
+            }
+            to {
+                border-color: rgba(255, 215, 0, 0.8);
+                box-shadow: 0 0 30px rgba(255, 215, 0, 0.8);
+            }
+        }
+        h1 {
+            color: gold;
+            font-size: 4em;
+            margin-bottom: 20px;
+            text-shadow: 0 0 20px gold;
+        }
+        p {
+            font-size: 1.5em;
+            line-height: 1.8;
+            margin-bottom: 40px;
+        }
+        .image-gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            margin-bottom: 40px;
+        }
+        .image-gallery img {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 3px solid gold;
+            box-shadow: 0 0 20px rgba(255, 215, 0, 0.5);
+            transition: all 0.5s;
+        }
+        .image-gallery img:hover {
+            transform: rotate(360deg) scale(1.1);
+            box-shadow: 0 0 30px gold;
+        }
+        .btn-container {
+            display: flex;
+            justify-content: center;
+            width: 100%;
+        }
+        .btn {
+            background: linear-gradient(45deg, gold, #ffd700);
+            color: #333;
+            border: none;
+            padding: 15px 40px;
+            font-size: 1.2em;
+            border-radius: 50px;
+            cursor: pointer;
+            transition: all 0.3s;
+            text-decoration: none;
+            font-weight: bold;
+            box-shadow: 0 5px 15px rgba(255, 215, 0, 0.5);
+            margin: 0 10px;
+        }
+        .btn:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(255, 215, 0, 0.8);
+            background: linear-gradient(45deg, #ffd700, gold);
+        }
+        .btn-prev {
+            background: linear-gradient(45deg, #9370db, #8a2be2);
+            color: white;
+        }
+        .btn-prev:hover {
+            background: linear-gradient(45deg, #8a2be2, #9370db);
+        }
+        .stars {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            pointer-events: none;
+        }
+        .star {
+            position: absolute;
+            background-color: white;
+            border-radius: 50%;
+            animation: twinkle 2s infinite alternate;
+        }
+        @keyframes twinkle {
+            from {
+                opacity: 0.2;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="stars" id="stars"></div>
+    
+    <div class="container">
+        <h1>The Grand Finale!</h1>
+        <p>Through every season, endlessly.
+Not just for now, or a passing while,
+But for every heartbeat, every mile.
+No matter where life takes us through,
+My forever will always be you.</p>
+        
+        <div class="image-gallery">
+            <img src="./images/1000133406.jpg" alt="Final Celebration">
+            <img src="./images/IMG-20240828-WA0013.jpg" alt="Grand Party">
+            <img src="./images/IMG_20250620_150101.jpg" alt="Happy Ending">
+            <img src="./images/Snapchat-489829671.jpg" alt="Memorable Moment">
+            <img src="./images/1000008623.jpg" alt="Love Happiness">
+        </div>
+        
+        <div class="btn-container">
+            <a href="page6.html" class="btn btn-prev">Previous</a>
+            <a href="index.html" class="btn">Start Over</a>
+        </div>
+    </div>
+
+    <script>
+        // Create stars
+        const starsContainer = document.getElementById('stars');
+        for (let i = 0; i < 100; i++) {
+            const star = document.createElement('div');
+            star.className = 'star';
+            star.style.width = Math.random() * 5 + 1 + 'px';
+            star.style.height = star.style.width;
+            star.style.left = Math.random() * 100 + 'vw';
+            star.style.top = Math.random() * 100 + 'vh';
+            star.style.animationDelay = Math.random() * 2 + 's';
+            star.style.animationDuration = Math.random() * 2 + 1 + 's';
+            starsContainer.appendChild(star);
+        }
+    </script>
+</body>
+</html>

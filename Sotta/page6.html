@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Birthday Wishes Page 6</title>
+    <style>
+        body {
+            font-family: 'Trebuchet MS', sans-serif;
+            background: linear-gradient(45deg, #4b0082, #800080);
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            text-align: center;
+            color: white;
+        }
+        .container {
+            background-color: rgba(0, 0, 0, 0.7);
+            border-radius: 20px;
+            padding: 40px;
+            box-shadow: 0 0 30px rgba(255, 255, 255, 0.2);
+            max-width: 800px;
+            margin: 20px;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        h1 {
+            color: #ffd700;
+            font-size: 3em;
+            margin-bottom: 20px;
+            text-shadow: 0 0 10px rgba(255, 215, 0, 0.5);
+        }
+        p {
+            font-size: 1.3em;
+            line-height: 1.8;
+            margin-bottom: 30px;
+            color: #e6e6fa;
+        }
+        .image-gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+            margin-bottom: 30px;
+        }
+        .image-gallery img {
+            width: 140px;
+            height: 140px;
+            object-fit: cover;
+            border-radius: 10px;
+            border: 2px solid #9370db;
+            transition: all 0.3s;
+            filter: brightness(0.9);
+        }
+        .image-gallery img:hover {
+            transform: scale(1.1);
+            filter: brightness(1.1);
+            border-color: #ffd700;
+            box-shadow: 0 0 20px rgba(255, 215, 0, 0.5);
+        }
+        .btn-container {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+        }
+        .btn {
+            background: linear-gradient(45deg, #9370db, #8a2be2);
+            color: white;
+            border: none;
+            padding: 12px 30px;
+            font-size: 1.1em;
+            border-radius: 30px;
+            cursor: pointer;
+            transition: all 0.3s;
+            text-decoration: none;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+        }
+        .btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+            background: linear-gradient(45deg, #8a2be2, #9370db);
+        }
+        .btn-prev {
+            background: linear-gradient(45deg, #ff4500, #ff8c00);
+        }
+        .btn-prev:hover {
+            background: linear-gradient(45deg, #ff8c00, #ff4500);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Glamorous Celebration</h1>
+        <p>Let’s travel the world, hand in hand,
+Collecting memories in every land.
+One day, we’ll share our stories with pride,
+With our little ones sitting by our side.
+I hope I’ll always be your favorite travel mate,
+On every journey, through every fate.</p>
+        
+        <div class="image-gallery">
+            <img src="./images/1000133341.jpg" alt="Glamour Birthday">
+            <img src="./images/1000133373.jpg" alt="Sparkle Party">
+            <img src="./images/1000133401.jpg" alt="Champagne Celebration">
+            <img src="./images/1000186980.jpg" alt="Dress Event">
+            <img src="./images/1000133438.jpg" alt="Luxury Cake">
+        </div>
+        
+        <div class="btn-container">
+            <a href="page5.html" class="btn btn-prev">Previous</a>
+            <a href="page7.html" class="btn">Next Wish</a>
+        </div>
+    </div>
+</body>
+</html>
